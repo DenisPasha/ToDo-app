@@ -1,0 +1,45 @@
+version: '3.3'
+services:
+
+  mysqldb:
+    container_name: "database-container"
+    image: denispasha/mysql-db:5.7
+    ports:
+      - "3307:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 125963Denis
+      MYSQL_DATABASE: taskapp
+
+
+  task-management-app:
+    build: .
+    image: denispasha/taskapp:v1
+    container_name: taskmanagement
+    depends_on:
+      - mysqldb
+    ports:
+      - "8080:8080" # web ui
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database-container:3306/taskapp
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 125963Denis
+
+
+  app:
+    image: denispasha/fe_taskapp:v1
+    container_name: front_end_taskapp
+    depends_on:
+      - task-management-app
+    ports:
+    - "3000:3000"
+
+
+
+
+
+
+
+
+
+

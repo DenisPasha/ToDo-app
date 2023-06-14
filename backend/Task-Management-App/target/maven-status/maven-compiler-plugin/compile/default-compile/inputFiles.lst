@@ -1,0 +1,10 @@
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\TaskManagementAppApplication.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\config\CorsConfig.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\repository\TaskRepository.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\model\constants\PDFConstants.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\model\dto\TaskDto.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\config\ApplicationConfiguration.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\service\TaskService.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\web\TaskController.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\model\entities\Task.java
+C:\Users\denis\OneDrive\Desktop\Task-Management-App\src\main\java\com\example\taskmanagementapp\service\PDFExporter.java

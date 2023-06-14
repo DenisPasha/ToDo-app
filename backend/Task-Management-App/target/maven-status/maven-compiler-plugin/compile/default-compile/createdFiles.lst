@@ -1,0 +1,10 @@
+com\example\taskmanagementapp\model\entities\Task.class
+com\example\taskmanagementapp\service\PDFExporter.class
+com\example\taskmanagementapp\model\constants\PDFConstants.class
+com\example\taskmanagementapp\repository\TaskRepository.class
+com\example\taskmanagementapp\model\dto\TaskDto.class
+com\example\taskmanagementapp\config\CorsConfig.class
+com\example\taskmanagementapp\config\ApplicationConfiguration.class
+com\example\taskmanagementapp\web\TaskController.class
+com\example\taskmanagementapp\service\TaskService.class
+com\example\taskmanagementapp\TaskManagementAppApplication.class

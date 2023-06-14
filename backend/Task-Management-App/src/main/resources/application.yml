@@ -1,0 +1,36 @@
+spring:
+  thymeleaf:
+    mode: HTML5
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+  #  change localhost with database-container to use it in docker
+    url: "jdbc:mysql://localhost:3306/task-Management-DB?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8"
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_ROOT_PASSWORD:125963Denis}
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  sql:
+    init:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    org:
+      hibernate:
+        dialect:
+          MySQLDialect:
+
+
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+
+
