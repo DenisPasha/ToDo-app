@@ -32,5 +32,8 @@ Create Todo: Use the form on the frontend to create a new todo item.
 View Todos: All existing todos are displayed on the main page.
 Update Todo: Click on a todo item to edit its details.
 Delete Todo: Remove a todo by clicking the delete button.
+![todo1](https://github.com/user-attachments/assets/6691751f-3fcd-4c7e-b957-5d67ec0abfff)
+
+
 
 The application is also dockerized you can download and run the compose file to run the project 
