@@ -9,14 +9,10 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-
     @Column(unique = true , name = "title" , nullable = false)
     private String title;
     @Column(name = "description" , nullable = false)
     private String description;
-
-
-
 
     public long getId() {
         return id;

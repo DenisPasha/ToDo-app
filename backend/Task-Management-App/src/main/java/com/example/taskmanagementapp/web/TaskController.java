@@ -22,14 +22,11 @@ public class TaskController {
         this.taskService = taskService;
     }
 
-
-
     @GetMapping("/list-of-tasks")
     public ResponseEntity<List<TaskDto>> getTasks(){
         List<TaskDto> allTasks = this.taskService.getAllTasks();
 
       return  allTasks.size() > 0 ? ResponseEntity.ok(allTasks) : ResponseEntity.notFound().build();
-
     }
 
     @PostMapping(path = "/create-task",
@@ -44,7 +41,6 @@ public class TaskController {
         }else {
             return ResponseEntity.badRequest().build();
         }
-
     }
 
     @PostMapping("/delete/{title}")
@@ -59,7 +55,6 @@ public class TaskController {
         }
     }
 
-
     @PutMapping("edit/{title}")
     public ResponseEntity<TaskDto> editTask(@PathVariable String title , @RequestBody TaskDto dto){
 
@@ -69,7 +64,6 @@ public class TaskController {
 
     }
 
-
     @GetMapping("export-to-pdf")
     public ResponseEntity<TaskDto> exportToPdf() throws IOException {
 
@@ -78,5 +72,4 @@ public class TaskController {
         return hasTaskToExport ? ResponseEntity.ok().build() : ResponseEntity.status(404).build();
 
     }
-
 }

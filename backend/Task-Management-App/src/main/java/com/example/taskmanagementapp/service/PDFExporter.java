@@ -35,7 +35,6 @@ public class PDFExporter {
         titleOfPDF(content, PDF_TITLE, SPACING);
         creatingContentForPdfPage(tasks, content);
         closingAndSavingTheFile(outputPath, doc, page, content);
-
     }
 
     private static void closingAndSavingTheFile(String outputPath, PDDocument doc, PDPage page, PDPageContentStream content) throws IOException {

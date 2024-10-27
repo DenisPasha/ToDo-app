@@ -56,8 +56,6 @@ public class TaskService {
         }
 
         return isTaskExist;
-
-
     }
 
     public List<TaskDto> getAllTasks() {
@@ -72,7 +70,6 @@ public class TaskService {
     }
 
     public boolean deleteTask(String titleToDelete) {
-
         Task taskToDelete = this.taskRepository.findTaskByTitle(titleToDelete).orElse(null);
         if (taskToDelete!=null){
             this.taskRepository.delete(taskToDelete);
@@ -80,19 +77,16 @@ public class TaskService {
         }else {
             return false;
         }
-
     }
 
     public Boolean exportToPDF() throws IOException {
         List<TaskDto> allTasks = getAllTasks();
         boolean hasTasksToExport = allTasks.size() > 0;
 
-
         if (hasTasksToExport){
             this.pdfExporter.exportToPDF(allTasks , outputPath);
             return true;
         }
         return false;
-
     }
 }

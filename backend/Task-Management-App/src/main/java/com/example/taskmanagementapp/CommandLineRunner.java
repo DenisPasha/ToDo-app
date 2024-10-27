@@ -62,13 +62,8 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
                 default:
                     System.out.println("Please Enter valid command");
             }
-
             command = scanner.nextLine();
         }
-
-
-
-
     }
 
     private void exportToPDF() throws IOException {
@@ -84,7 +79,6 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
         boolean isTaskDeleted = this.taskService.deleteTask(titleToDelete);
 
         System.out.println(isTaskDeleted ? "Successfully deleted task" : "Task  does not exist");
-
     }
 
     private void listAllTaks() {
